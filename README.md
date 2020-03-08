@@ -1,6 +1,10 @@
 # socket-chat
 A tcp-socket chat client and server written in C using linux sockets without any libraries.
 
+## Build instructions
+The server and the client are in their own separate directories with their own Makefiles (although they have the same requirements). To build the client, run make in the client directory and vice versa for the server. There are no external libraries required and it's written in C99 compiled with the `-pedantic` flag in GCC 9.2.0 so it should work on old GCC versions and other compilers although I have not tried that.
+
+
 ## Network protocol for TCP chat server/client
 
 ### Request type
